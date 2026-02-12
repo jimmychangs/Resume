@@ -106,6 +106,7 @@ main {
 a {
   color: red;
 }
+
 /* Specifity Challenge: (.site-nav a) beats out (a) since the score of (.site-nav a) is 0011 which is
 due to having a class + element selector vs (a) which is just a element selector with a score of 0001,
 leading to the links inside the nav to be blue, whilst the others stay red */
