@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jimmy Chang | Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-left">
+        <!-- <img
+          class="avatar"
+          src="assets/headshot.jpg"
+          alt="Headshot of Jimmy Chang"
+          width="120"
+          height="120"
+        /> -->
+
+        <div>
+          <h1 id="name">Jimmy Chang</h1>
+
+          <p class="contact">
+            <a href="tel:7185418433">(718)-541-8433</a>
+            <span class="dot">•</span>
+            <a href="mailto:changjimmy4@gmail.com">changjimmy4@gmail.com</a>
+            <span class="dot">•</span>
+            <span>Queens, NY</span>
+          </p>
+
+          <p class="contact">
+            <a href="https://www.linkedin.com/in/jimmy-chang-tech/" target="_blank" rel="noreferrer">
+              linkedin.com/in/jimmy-chang-tech
+            </a>
+            <span class="dot">•</span>
+            <a href="https://github.com/jimmychangs" target="_blank" rel="noreferrer">
+              github.com/jimmychangs
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Section navigation">
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="education" class="card">
+        <h2>Education</h2>
+
+        <article>
+          <h3>Hunter College, City University of New York (CUNY)</h3>
+          <p class="meta">New York, NY | Bachelor of Computer Science (Expected May 2026)</p>
+
+          <h4>Relevant Coursework</h4>
+          <ul>
+            <li>Discrete Structures</li>
+            <li>Data Structures and Algorithms</li>
+            <li>C++ Programming</li>
+            <li>Python Programming</li>
+            <li>Software Analysis &amp; Design</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="skills" class="card">
+        <h2>Skills</h2>
+
+        <table class="skills-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Technical</td>
+              <td>C++, Python, HTML, CSS, React, JavaScript, Next.js, Supabase, Firebase, Git/GitHub</td>
+            </tr>
+            <tr>
+              <td>Languages</td>
+              <td>Korean (Conversational)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="experience" class="card">
+        <h2>Relevant Experience</h2>
+
+        <article class="job">
+          <h3>CUNY Tech Prep — Fellow, Software Development/Web Development</h3>
+          <p class="meta">New York, NY | Jul 2025 – Present</p>
+          <ul>
+            <li>
+              Learn in-demand technologies like React, Node + Express, and PostgreSQL, along with industry best practices:
+              MVC, Git/GitHub version control, Agile/Scrum workflows, TDD, and CI/CD.
+            </li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Underground Overground Comedy — Web Development Intern</h3>
+          <p class="meta">New York, NY | Jan 2025 – May 2025</p>
+          <ul>
+            <li>Improved website UI/UX by implementing responsive layouts and reusable React components.</li>
+            <li>Added 20+ new comedy shows to the database, optimized queries, and resolved site performance bugs.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Projects</h2>
+
+        <article class="project">
+          <h3>PAWS</h3>
+          <p class="meta">React, Next.js, Supabase | Aug 2025 – Dec 2025</p>
+          <ul>
+            <li>Collaborated with a CUNY Tech Prep team to build a social networking platform for pet owners.</li>
+            <li>Designed user and pet account systems for event creation, direct messaging, and media sharing via Supabase.</li>
+            <li>Implemented responsive UI with React and Next.js, supporting pet profiles, event feeds, and image posts.</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>To-Do List App</h3>
+          <p class="meta">React, Firebase | Jan 2025</p>
+          <ul>
+            <li>Built a responsive to-do list app with real-time syncing via Firebase Firestore and Google Authentication.</li>
+            <li>Enhanced UI/UX with React components to improve task creation speed and engagement.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="leadership" class="card">
+        <h2>Leadership &amp; Development</h2>
+
+        <article class="job">
+          <h3>Men’s Volleyball Team, NCAA Division III — Student Athlete</h3>
+          <p class="meta">New York, NY | Jan 2023 – Apr 2024</p>
+          <ul>
+            <li>Competed at the collegiate level, contributing to team strategy, performance, and success.</li>
+            <li>Built teamwork, leadership, and time management skills while balancing academics and athletics.</li>
+            <li>Collaborated with coaches and teammates to improve technical skills through practice and competition.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>FirstGenU Career Institute — Student</h3>
+          <p class="meta">New York, NY | Feb 2024 – Mar 2024</p>
+          <ul>
+            <li>Completed modules focused on navigating the workplace.</li>
+            <li>Connected with first-generation peers across the US.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Jimmy Chang</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
