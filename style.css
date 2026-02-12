@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  background: #f6f7fb;
+  color: #111;
+}
+
+.site-header {
+  background: #ffffff;
+  padding: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#name {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.avatar {
+  border-radius: 14px;
+  border: 1px solid #e1e1e1;
+  object-fit: cover;
+}
+
+.contact {
+  margin: 6px 0 0 0;
+  color: #333;
+}
+
+.dot {
+  padding: 0 10px;
+  color: #999;
+}
+
+.site-nav { 
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+main {
+  max-width: 900px;
+  margin: 18px auto;
+  padding: 0 16px 40px 16px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.meta {
+  margin-top: 4px;
+  color: #555;
+}
+
+.job,
+.project {
+  padding-top: 10px;
+}
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.skills-table th,
+.skills-table td {
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  text-align: left;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 18px;
+  color: #555;
+}
+
+
+.site-nav a { 
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #eef1ff;
+  color: #1a2a7a;
+}
+
+a {
+  color: red;
+}
+/* Specifity Challenge: (.site-nav a) beats out (a) since the score of (.site-nav a) is 0011 which is
+due to having a class + element selector vs (a) which is just a element selector with a score of 0001,
+leading to the links inside the nav to be blue, whilst the others stay red */
+
