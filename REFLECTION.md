@@ -1,0 +1,5 @@
+#Reflection
+1. Describe the path an HTTP Request takes from a browser to your GitHub Pages site.
+First the browser will build an HTTP GET request for my page, then will do a DNS lookup, to which then DNS will return an IP address for the GitHub Pages server network. Then it will make a secure HTTPS connection and have the request sent to GitHub Pages and then GitHub Pages will then send back my files for the browser to render the page.
+2. Docker Containers differ from GitHub Pages where a Docker Container is a packaged environment that lets you control your app and everything it needs to run. It runs the same way on any machine. GitHub Pages is a fixed hosting environment that only host static files, such as HTML, CSS and JS, and cannot run any backend. 
+3. I asked ChatGPT "Please provide a checklist and some tips to start a CSS file from scratch (like where to start, etc)." and it did not give me any logical errors.
