@@ -125,6 +125,48 @@ a {
   color: red;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+  grid-gap: 16px; /* consistent spacing */
+  margin-top: 12px;
+}
+
+.project-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 14px;
+  background: #ffffff;
+}
+
+.project-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+}
+
+.project-title {
+  margin: 10px 0 6px 0;
+}
+
+.project-desc {
+  margin: 0;
+  color: #444;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* Specifity Challenge: (.site-nav a) beats out (a) since the score of (.site-nav a) is 0011 which is
 due to having a class + element selector vs (a) which is just a element selector with a score of 0001,
 leading to the links inside the nav to be blue, whilst the others stay red */
