@@ -12,6 +12,14 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.header-row {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  gap: 16px;
+  flex-wrap: wrap;    
+}            
+
 .header-left {
   display: flex;
   gap: 16px;
@@ -41,10 +49,11 @@ body {
 }
 
 .site-nav { 
-  margin-top: 14px;
   display: flex;
   gap: 10px;
+  align-items: center;
   flex-wrap: wrap;
+  margin-top: 0; 
 }
 
 main {
@@ -101,6 +110,15 @@ main {
   border-radius: 10px;
   background: #eef1ff;
   color: #1a2a7a;
+}
+
+.site-nav a:hover {
+  border: 1px solid #cdd5ff;
+}
+
+.site-nav a:focus-visible {
+  outline: 2px solid #1a2a7a;
+  outline-offset: 2px;
 }
 
 a {
